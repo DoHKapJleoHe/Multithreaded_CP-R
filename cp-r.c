@@ -271,6 +271,7 @@ int main(int argc, char* argv[])
         return 0;
     }
     
+    // making new dir with the same permision mode as old dir
     struct stat stats;
     lstat(dirs->old_dir, &stats);
     mode_t mode = stats.st_mode;  
